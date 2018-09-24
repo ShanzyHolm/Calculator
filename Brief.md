@@ -4,7 +4,8 @@ Create 3 single classes with methods to perform some functionality.
 MVP:
 
 Calculator
-Create a Calculator class. This should have functions for Add, Subtract, Multiply and Divide, each taking in two integers to perform the calculations on.
+Create a Calculator class.
+This should have functions for Add, Subtract, Multiply and Divide, each taking in two integers to perform the calculations on.
 
 Water Bottle
 Create a water bottle class with a volume property.
