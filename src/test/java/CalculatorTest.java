@@ -25,4 +25,11 @@ public class CalculatorTest {
         assertEquals(2, difference);
     }
 
+
+    @Test
+    public void canMultiply(){
+        Calculator calculator = new Calculator(5, 3);
+        int product = calculator.multiply();
+        assertEquals(15, product);
+    }
 }
