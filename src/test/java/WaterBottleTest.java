@@ -33,7 +33,12 @@ public class WaterBottleTest {
 
 //    @Test
 //    public void canTakeTwoDrinks(){
-//        int twoDrinks ....? ;
+//        int twoDrinks = waterBottle.drink().drink();
+//        assertEquals(80, twoDrinks);
+//    }
+//    @Test
+//    public void canTakeTwoDrinks(){
+//        int twoDrinks = waterBottle.drink() - waterBottle.drink();
 //        assertEquals(80, twoDrinks);
 //    }
 
