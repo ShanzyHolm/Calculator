@@ -18,6 +18,19 @@ public class WaterBottleTest {
         assertEquals(90, oneDrink);
     }
 
+    @Test
+    public void canEmptyWaterBottle(){
+        int emptyBottle = waterBottle.empty();
+        assertEquals(0, emptyBottle);
+    }
+
+
+//    @Test
+//    public void canTakeTwoDrinks(){
+//        int twoDrinks ....? ;
+//        assertEquals(80, twoDrinks);
+//    }
+
 
 
 }
