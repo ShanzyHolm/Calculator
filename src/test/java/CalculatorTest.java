@@ -18,4 +18,11 @@ public class CalculatorTest {
         assertEquals(8, sum);
     }
 
+    @Test
+    public void canSubtract(){
+        Calculator calculator = new Calculator(5, 3);
+        int difference = calculator.subtract();
+        assertEquals(2, difference);
+    }
+
 }
