@@ -32,4 +32,11 @@ public class CalculatorTest {
         int product = calculator.multiply();
         assertEquals(15, product);
     }
+
+    @Test
+    public void canDivide(){
+        Calculator calculator = new Calculator(9, 3);
+        int answer = calculator.divide();
+        assertEquals(3, answer);
+    }
 }
