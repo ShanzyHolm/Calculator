@@ -18,6 +18,12 @@ public class PrinterTest {
         assertEquals(20, paper);
     }
 
+    @Test
+    public void totalPagesToPrint() {
+        int paperNeeded = printer.printMultiplePageDocuments(3, 5);
+        assertEquals(15, paperNeeded);
+    }
+
 }
 
 

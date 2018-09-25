@@ -16,4 +16,9 @@ public class Printer {
     public int getSheetsOfPaper() {
         return sheetsOfPaper;
     }
+
+    public int printMultiplePageDocuments(int pagesInDocument, int numberOfCopies) {
+        int totalPagesToPrint = pagesInDocument * numberOfCopies;
+        return totalPagesToPrint;
+    }
 }
