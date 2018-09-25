@@ -4,11 +4,11 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class CalculatorTest {
-//    Calculator calculator;
+//    Calculator calculator; //Defining a new variable
 
 //    @Before
 //    public void before(){
-//        calculator = new Calculator();
+//        calculator = new Calculator();  //creating it (new Calculator) the initialising it () but not passing anything in
 //    }
 
     @Test
@@ -39,4 +39,12 @@ public class CalculatorTest {
         int answer = calculator.divide();
         assertEquals(3, answer);
     }
+
+
+//    @Test // when dividing should use double as some number will return decimals (e.g. dividing 3/2)
+//    public void canDivide(){
+//        Calculator calculator = new Calculator(9, 3);
+//        double answer = calculator.divide();
+//        assertEquals(3, answer, 0);
+//    }
 }

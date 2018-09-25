@@ -8,9 +8,11 @@
 
 public class Printer {
     private int sheetsOfPaper;
+    private int toner;
 
-    public Printer(int sheetsOfPaper) {
+    public Printer(int sheetsOfPaper, int toner) {
         this.sheetsOfPaper = sheetsOfPaper;
+        this.toner = toner;
     }
 
     public int getSheetsOfPaper() {
@@ -20,5 +22,13 @@ public class Printer {
     public int printMultiplePageDocuments(int pagesInDocument, int numberOfCopies) {
         int totalPagesToPrint = pagesInDocument * numberOfCopies;
         return totalPagesToPrint;
+    }
+
+    public void print( int pages, int copies) {
+        int totalPages = pages * copies;
+        if (this.sheetsOfPaper >= totalPages) {
+            this.sheetsOfPaper -= totalPages;
+            this.toner -= totalPages;
+        } //cmd option t - to surround with an if statement
     }
 }

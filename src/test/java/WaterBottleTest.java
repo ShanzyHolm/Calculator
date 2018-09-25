@@ -13,15 +13,32 @@ public class WaterBottleTest {
     }
 
     @Test
-    public void canTakeOneDrink(){
-        int oneDrink = waterBottle.drink();
-        assertEquals(90, oneDrink);
+    public void volumeStartsAt100(){
+        assertEquals(100, waterBottle.getVolume());
     }
+
+//    @Test
+//    public void canTakeOneDrink(){
+//        int oneDrink = waterBottle.drink();
+//        assertEquals(90, oneDrink);
+//    }
+
+    @Test
+    public void canTakeOneDrink(){
+        waterBottle.drink();
+        assertEquals(90, waterBottle.drink());
+    }
+
+//    @Test
+//    public void canEmptyWaterBottle(){
+//        int emptyBottle = waterBottle.empty();
+//        assertEquals(0, emptyBottle);
+//    }
 
     @Test
     public void canEmptyWaterBottle(){
-        int emptyBottle = waterBottle.empty();
-        assertEquals(0, emptyBottle);
+        waterBottle.empty();
+        assertEquals(0, waterBottle.empty());
     }
 
     @Test

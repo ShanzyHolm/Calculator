@@ -28,4 +28,8 @@ public class Calculator {
         return this.num1 / this.num2;
     }
 
+//    public double divide(double num1, double num2){
+//        return this.num1 / this.num2;
+//    } //when dividing always use double
+
 }

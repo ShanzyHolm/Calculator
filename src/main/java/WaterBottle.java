@@ -12,8 +12,12 @@ public class WaterBottle {
         this.volume = 100;
     }
 
+    public int getVolume() {
+        return volume;
+    }
+
     public int drink(){
-        return this.volume - 10;
+        return this.volume -= 10;
     }
 
 //    public int drink(){
